@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  width: 420px;
+  max-width: 95%;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* FORM */
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+}
+
+/* BUTTONS */
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:not(.danger) {
+  background: #00c853;
+  color: #fff;
+}
+
+.danger {
+  background: #e53935;
+  color: #fff;
+}
+
+/* EXPENSE CARDS */
+.card {
+  background: #ffffff;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* CATEGORY BADGE */
+.badge {
+  background: #ececec;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* DELETE BUTTON */
+.del {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* SUMMARY */
+#summary {
+  background: rgba(255,255,255,0.15);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CHART */
+canvas {
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .card {
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  /* Stack buttons vertically on mobile */
+  .btn-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .badge {
+    align-self: flex-start;
+  }
+
+  .del {
+    align-self: flex-end;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

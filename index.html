@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="container">
+  <h1>💰 AI Expense Tracker</h1>
+
+  <div class="form">
+  <input id="desc" placeholder="Expense description">
+  <input id="amt" type="number" placeholder="Amount ₹">
+
+  <div class="btn-group">
+    <button onclick="addExpense()">➕ Add</button>
+    <button class="danger" onclick="clearAll()">🗑 Delete All</button>
+  </div>
+</div>
+
+
+  <h2>Expenses</h2>
+  <div id="list"></div>
+
+  <h2>Total</h2>
+  <div id="summary"></div>
+
+  <h2>Category Chart</h2>
+  <canvas id="chart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
