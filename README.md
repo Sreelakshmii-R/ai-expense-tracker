@@ -23,4 +23,4 @@ A web application to track and categorize personal expenses using AI.
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/Sreelakshmi/ai-expense-tracker.git
+git clone https://github.com/Sreelakshmi-R/ai-expense-tracker.git
