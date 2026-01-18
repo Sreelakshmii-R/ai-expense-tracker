@@ -9,7 +9,7 @@ A web application to track and categorize personal expenses using AI.
 - Dynamic chart to visualize expenses (Chart.js)
 - Responsive and user-friendly frontend (HTML, CSS, JavaScript)
 - Backend with Node.js server
-- Delete individual expenses only (no full reset)
+- Delete individual expenses 
 
 ## Tech Stack
 
